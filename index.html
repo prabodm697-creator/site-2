@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDF</title>
+
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="logo">LION'S  DEN</a>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#transformations">Transformations</a></li>
+            <li><a href="#pricing">Membership</a></li>
+            <li><a href="#training">Personal Training</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="reveal">Forge Your <span style="color:var(--primary-color)">Legacy</span></h1>
+        <p class="reveal">Join the elite gym designed for champions.</p>
+        <a href="#pricing" class="btn reveal">Join Now</a>
+        
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-header reveal">
+            <h2>About <span>Us</span></h2>
+            <div style="width: 50px; height: 3px; background: var(--primary-color); margin: 0 auto;"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-img reveal">
+                <img src="https://picsum.photos/seed/gyminterior/600/400" alt="Gym Interior">
+            </div>
+            <div class="about-text reveal">
+                <h3>More Than Just A Gym</h3>
+                <p>At Iron & Pulse, we believe fitness is a lifestyle, not a chore. Established in 2015, we have helped thousands of clients transform their bodies and minds through state-of-the-art equipment and world-class coaching.</p>
+                <p>Our logo represents the fusion of raw power (Iron) and the energy required to sustain it (Pulse). We are a community driven by results.</p>
+                <a href="#contact" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="section-header reveal">
+            <h2>Our <span>Services</span></h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <i class="fas fa-dumbbell service-icon"></i>
+                <h3>Weight Training</h3>
+                <p>Free weights and machines designed for hypertrophy and strength.</p>
+            </div>
+            <div class="service-card reveal">
+                <i class="fas fa-heartbeat service-icon"></i>
+                <h3>Cardio Zone</h3>
+                <p>Latest treadmills, bikes, and rowers for endurance training.</p>
+            </div>
+            <div class="service-card reveal">
+                <i class="fas fa-users service-icon"></i>
+                <h3>Group Classes</h3>
+                <p>High-energy HIIT, Yoga, and Spin classes led by pros.</p>
+            </div>
+            <div class="service-card reveal">
+                <i class="fas fa-apple-alt service-icon"></i>
+                <h3>Nutrition Plans</h3>
+                <p>Customized diet plans to fuel your specific fitness goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Transformation Section (Animated Scroll & Zoom) -->
+    <section id="transformations" style="background-color: #0a0a0a;">
+        <div class="section-header reveal">
+            <h2>Client <span>Transformations</span></h2>
+            <p style="color: #888;">Swipe left/right & Click to zoom</p>
+        </div>
+        
+        <div class="transformations-wrapper reveal">
+            <div class="transformation-slider" id="transSlider">
+                <!-- Cards -->
+                <div class="trans-card" onclick="openLightbox(this)">
+                    <img src="https://picsum.photos/seed/fit1/400/500" alt="Client 1">
+                    <div class="trans-overlay">
+                        <h4>Sarah J.</h4>
+                        <p>Lost 15kg in 3 months</p>
+                    </div>
+                </div>
+                <div class="trans-card" onclick="openLightbox(this)">
+                    <img src="https://picsum.photos/seed/fit2/400/500" alt="Client 2">
+                    <div class="trans-overlay">
+                        <h4>Mike T.</h4>
+                        <p>Gained 10kg Muscle</p>
+                    </div>
+                </div>
+                <div class="trans-card" onclick="openLightbox(this)">
+                    <img src="https://picsum.photos/seed/fit3/400/500" alt="Client 3">
+                    <div class="trans-overlay">
+                        <h4>Jessica L.</h4>
+                        <p>Competition Ready</p>
+                    </div>
+                </div>
+                <div class="trans-card" onclick="openLightbox(this)">
+                    <img src="https://picsum.photos/seed/fit4/400/500" alt="Client 4">
+                    <div class="trans-overlay">
+                        <h4>David R.</h4>
+                        <p>Strength & Conditioning</p>
+                    </div>
+                </div>
+                <div class="trans-card" onclick="openLightbox(this)">
+                    <img src="https://picsum.photos/seed/fit5/400/500" alt="Client 5">
+                    <div class="trans-overlay">
+                        <h4>Anna K.</h4>
+                        <p>Post-Natal Transformation</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-btn" onclick="scrollSlider(-300)"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn" onclick="scrollSlider(300)"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="Zoomed Image">
+    </div>
+
+    <!-- Membership Pricing -->
+    <section id="pricing">
+        <div class="section-header reveal">
+            <h2>Gym <span>Membership</span></h2>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card reveal">
+                <h3>Basic</h3>
+                <div class="price">$29<span>/mo</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Access to gym equipment</li>
+                    <li><i class="fas fa-check"></i> Locker room access</li>
+                    <li><i class="fas fa-times" style="color:#555"></i> Group Classes</li>
+                    <li><i class="fas fa-times" style="color:#555"></i> Personal Trainer</li>
+                </ul>
+                <a href="#contact" class="btn" style="margin-top:1rem; width:100%">Choose Plan</a>
+            </div>
+
+            <div class="pricing-card featured reveal">
+                <h3>Pro</h3>
+                <div class="price">$49<span>/mo</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> All Basic features</li>
+                    <li><i class="fas fa-check"></i> Unlimited Group Classes</li>
+                    <li><i class="fas fa-check"></i> Nutrition Guide</li>
+                    <li><i class="fas fa-times" style="color:#555"></i> Personal Trainer</li>
+                </ul>
+                <a href="#contact" class="btn" style="margin-top:1rem; width:100%">Choose Plan</a>
+            </div>
+
+            <div class="pricing-card reveal">
+                <h3>Elite</h3>
+                <div class="price">$79<span>/mo</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> 24/7 Gym Access</li>
+                    <li><i class="fas fa-check"></i> All Classes & Sauna</li>
+                    <li><i class="fas fa-check"></i> Free Guest Pass</li>
+                    <li><i class="fas fa-check"></i> 1 PT Session/mo</li>
+                </ul>
+                <a href="#contact" class="btn" style="margin-top:1rem; width:100%">Choose Plan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Training Packages -->
+    <section id="training" style="background-color: #0a0a0a;">
+        <div class="section-header reveal">
+            <h2>Personal <span>Training</span></h2>
+        </div>
+        <div class="pt-grid">
+            <!-- Package 1 -->
+            <div class="pt-card reveal">
+                <div class="pt-img">
+                    <img src="https://picsum.photos/seed/pt1/500/300" alt="Starter PT">
+                </div>
+                <div class="pt-details">
+                    <h3>Starter Pack</h3>
+                    <ul>
+                        <li>3 Sessions</li>
+                        <li>Basic Assessment</li>
+                        <li>Diet Template</li>
+                    </ul>
+                    <div class="pt-price">$120</div>
+                    <button class="btn" onclick="buyPT('Starter Pack', '$120')">Buy via WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="pt-card reveal">
+                <div class="pt-img">
+                    <img src="https://picsum.photos/seed/pt2/500/300" alt="Muscle Build">
+                </div>
+                <div class="pt-details">
+                    <h3>Muscle Builder</h3>
+                    <ul>
+                        <li>10 Sessions</li>
+                        <li>Custom Hypertrophy Plan</li>
+                        <li>Weekly Check-ins</li>
+                    </ul>
+                    <div class="pt-price">$350</div>
+                    <button class="btn" onclick="buyPT('Muscle Builder', '$350')">Buy via WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="pt-card reveal">
+                <div class="pt-img">
+                    <img src="https://picsum.photos/seed/pt3/500/300" alt="Fat Loss">
+                </div>
+                <div class="pt-details">
+                    <h3>Fat Shredder</h3>
+                    <ul>
+                        <li>15 Sessions</li>
+                        <li>HIIT Focus</li>
+                        <li>Full Macro Management</li>
+                    </ul>
+                    <div class="pt-price">$500</div>
+                    <button class="btn" onclick="buyPT('Fat Shredder', '$500')">Buy via WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Package 4 -->
+            <div class="pt-card reveal">
+                <div class="pt-img">
+                    <img src="https://picsum.photos/seed/pt4/500/300" alt="Elite Coaching">
+                </div>
+                <div class="pt-details">
+                    <h3>Elite 1-on-1</h3>
+                    <ul>
+                        <li>Unlimited Sessions (1 Month)</li>
+                        <li>24/7 Coach Chat</li>
+                        <li>Posture Correction</li>
+                    </ul>
+                    <div class="pt-price">$900</div>
+                    <button class="btn" onclick="buyPT('Elite 1-on-1', '$900')">Buy via WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop / Merch Section -->
+    <section id="shop">
+        <div class="section-header reveal">
+            <h2>Gym <span>Merch</span></h2>
+        </div>
+        <div class="merch-container reveal">
+            <div class="merch-img">
+                <img src="https://picsum.photos/seed/tshirt/400/400" alt="Gym T-Shirt">
+            </div>
+            <div class="merch-info">
+                <h3>Official "Iron & Pulse" Tee</h3>
+                <p style="margin-bottom:1rem; color:#ccc;">Breathable fabric, perfect fit for lifting. Available in Black and Neon Lime.</p>
+                <p>
+                    <span class="old-price">$35.00</span>
+                    <span class="new-price">$19.99</span>
+                </p>
+                <button class="btn" style="margin-top:1.5rem;" onclick="buyMerch()">Buy Shirt via WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>About Iron & Pulse</h4>
+                <p>We are dedicated to helping you reach your peak physical potential. Join us today.</p>
+                <div class="social-icons" style="margin-top: 1rem;">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Fitness Blvd, Muscle City</p>
+                <p><i class="fas fa-phone"></i> +1 555 123 4567</p>
+                <p><i class="fas fa-envelope"></i> info@ironpulse.com</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Location</h4>
+                <div class="map-container">
+                    <!-- Embedded Google Map Placeholder -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968482413!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Iron & Pulse Gym. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
