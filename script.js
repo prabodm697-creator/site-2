@@ -1,5 +1,4 @@
 
- 
         // 1. Smart Navigation Bar (Sticky & Background Change)
         const navbar = document.getElementById('navbar');
         
